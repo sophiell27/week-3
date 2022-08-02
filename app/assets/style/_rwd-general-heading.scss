@@ -1,0 +1,19 @@
+.container{
+    @include pad{
+        padding: 0 36px;
+    }
+    @include mobile{
+        padding: 14px;
+    }
+}
+.section-title{
+    @include mobile{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+.normal-section-margin{
+    @include mobile{
+        margin-bottom: 40px;
+    }
+}

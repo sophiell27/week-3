@@ -1,0 +1,35 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Noto Sans TC', 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.6;
+}
+
+// background
+.beige-section{
+    background: $primary-beige;
+    padding: 80px 0;
+    color: $secondary-red;
+}
+
+// margin
+.normal-section-margin{
+    margin-bottom: 80px;
+}

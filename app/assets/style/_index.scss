@@ -1,0 +1,215 @@
+.banner{
+    width: auto;
+    height: 787px;
+    background: url("../images/home-header.png") no-repeat;
+    background-size: cover;
+    &-main{
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &-detail{
+        max-width: 576px;
+        color: $secondary-red;
+        text-align: right;
+        h3{
+            font-size: 36px;
+        }
+        h2{
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .cta-btn{
+            font-size: 20px;
+            padding: 6px 12px;
+            font-weight: 500;
+            color: #fff;
+            border: none;
+            background: $primary-red;
+        }
+
+    }
+}
+// benefits
+.benefits{
+    h2{
+        margin-bottom: 24px;
+    }
+    &-list{
+        @include listing-style(1.85%);
+        img{
+            max-width: 100px;
+            margin-bottom: 16px;
+        }
+        li:not(:last-child){
+            img{
+                padding: 8px;
+            }
+        }
+        li{
+            text-align: center;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+            color: $secondary-red;
+            margin-bottom: 8px;
+        }
+        p{
+            color: $primary-black;
+        }
+    }
+
+}
+// classical
+.classical{
+    &-display{
+        @include listing-style(1.85%);
+        li{
+            width: 32%;
+            a{
+                display: block;
+            }
+        }
+    }
+    img{
+        margin-bottom: 8px;
+    }
+}
+
+// joint design 
+
+.joint-design{
+    padding: 80px 0;
+    margin-bottom: 80px;
+    background: url(../images/index-bg.png) no-repeat center center;
+    background-size: cover;
+    h2{
+        color: $primary-white;
+    }
+    &-display{
+        display: flex;
+        li{
+            width: 100%;
+        }
+        a{
+            display: block;
+        }
+    }
+    h3{
+        background: $primary-white;
+        padding: 8px 0;
+        text-align: center;
+    }
+    .joint-design-pic-mobile{
+        display: none;
+    }
+
+}
+
+// recommenddation
+
+.recommendation{
+    &-list{
+        display: flex;
+        justify-content: space-between;
+        li{
+            width: 23.6%;
+            box-shadow: 0 2px 6px 0 $secondary-grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+        }
+    }
+    &-details{
+        img{
+            margin-bottom: 16px;
+            height: 306px;
+            width: 100%;
+            object-fit: cover;
+        }
+        p:not(:last-child){
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        p:last-child{
+            padding-bottom: 72px;
+        }
+    }
+    
+    &-date{
+        font-size: 14px;
+        color: $secondary-grey2;
+        margin-bottom: 16px;
+    }
+
+}
+
+.contact-us{
+    padding: 80px 0;
+    h2{
+        margin-bottom: 24px;
+    }
+    &-detail{
+        width: 50%;
+        margin: 0 auto;
+    }
+    &-intro{
+        color: $primary-black;
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        label{
+            margin-bottom: 8px;
+            color: $primary-black;
+        }
+        input,textarea{
+            padding: 6px 12px;
+            background: $primary-beige;
+            border: 1px solid #000;
+            margin-bottom: 16px;
+        }
+        textarea{
+            height: 136px;
+        }
+        .agreement{
+            display: flex;
+            align-items: start;
+            margin-bottom: 48px;
+            img{
+                margin-right: 4px;
+                margin-top: 3px;
+                cursor: pointer;
+            }
+            p{
+                color: $primary-black;
+            }
+        }
+        .btn-submit{
+            color: $primary-white;
+            font-weight: 700;
+            width: 65%;
+            padding: 16px 0;
+            background: $primary-red;
+            align-self: center;
+            cursor: pointer;
+            border: none;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+
+    }
+    
+
+
+}
