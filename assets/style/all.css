@@ -212,8 +212,8 @@ a:hover {
 
 .banner {
   width: auto;
-  min-height: 787px;
-  background: url("../images/home-header.png") no-repeat;
+  height: 787px;
+  background: url("../images/home-header.png") no-repeat center center;
   background-size: cover; }
   .banner-main {
     height: 100%;
