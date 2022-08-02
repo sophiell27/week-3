@@ -212,7 +212,7 @@ a:hover {
 
 .banner {
   width: auto;
-  height: 787px;
+  min-height: 787px;
   background: url("../images/home-header.png") no-repeat;
   background-size: cover; }
   .banner-main {
@@ -378,7 +378,7 @@ a:hover {
       border: 1px solid #000;
       margin-bottom: 16px; }
     .contact-us .contact-form textarea {
-      height: 136px; }
+      min-height: 136px; }
     .contact-us .contact-form .agreement {
       display: -webkit-box;
       display: -ms-flexbox;
