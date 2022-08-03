@@ -31,6 +31,24 @@
         }
 
     }
+    @include pad{
+        background: url("../images/home-header-sm.png") no-repeat;
+        background-size: cover;
+    }
+    @include mobile{
+        height: 396px;
+        &-detail{
+            max-width: 346px;
+        }
+        h3{
+            font-size: 16px;
+        }
+        h2{
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        
+    }
 }
 // benefits
 .benefits{
@@ -38,7 +56,15 @@
         margin-bottom: 24px;
     }
     &-list{
-        @include listing-style(1.85%);
+        display: flex;
+        li{
+            width: 23.6%;
+            text-align: center;
+            p{
+                color: $primary-black;
+                text-align: left;
+            }
+        }
         img{
             max-width: 100px;
             margin-bottom: 16px;
@@ -48,17 +74,36 @@
                 padding: 8px;
             }
         }
-        li{
-            text-align: center;
-        }
+        
         h3{
             font-size: 24px;
             font-weight: 700;
             color: $secondary-red;
             margin-bottom: 8px;
         }
-        p{
-            color: $primary-black;
+        
+    }
+    @include pad{
+        &-list{
+            flex-wrap: wrap;
+            column-gap: 3.4%;
+            row-gap: 3.4%;
+            li{
+                width: 48%;
+            }
+        }
+    }
+    @include mobile{
+        &-list{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+            li{
+                width: 100%;
+                p{
+                    text-align: left;
+                }
+            }
         }
     }
 
@@ -66,7 +111,8 @@
 // classical
 .classical{
     &-display{
-        @include listing-style(1.85%);
+        display: flex;
+        justify-content: space-between;
         li{
             width: 32%;
             a{
@@ -76,6 +122,23 @@
     }
     img{
         margin-bottom: 8px;
+    }
+    @include pad{
+        &-display{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+            li{
+                width: 48%;
+            }
+        }
+    }
+    @include mobile{
+        &-display{
+            li{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -106,7 +169,26 @@
     .joint-design-pic-mobile{
         display: none;
     }
-
+    @include pad{
+        &-display{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+            li{
+                width: 100%;
+            }
+        }
+    }
+    @include mobile{
+        padding: 40px 0;
+        .joint-design-pic{
+            display: none;
+        }
+        .joint-design-pic-mobile{
+            display: block;
+            width: 100%;
+        }
+    }
 }
 
 // recommenddation
@@ -148,6 +230,24 @@
         color: $secondary-grey2;
         margin-bottom: 16px;
     }
+    @include pad{
+        &-list{
+           flex-wrap: wrap;
+           row-gap: 24px;
+           li{
+               width: 48.3%;
+           }
+        }
+   }
+   @include mobile{
+       &-list{
+           flex-direction: column;
+           align-items: center;
+           li{
+               width: 100%;
+           }
+       }
+   }
 
 }
 
@@ -179,7 +279,7 @@
             margin-bottom: 16px;
         }
         textarea{
-            height: 136px;
+            min-height: 136px;
         }
         .agreement{
             display: flex;
@@ -210,6 +310,25 @@
 
     }
     
+    @include pad{
+        &-detail{
+            width: 58.33%;
+            .btn-submit{
+                width: 58.33%;
+            }
 
+        }
+    }
+    @include mobile{
+        padding: 40px 0;
+        &-detail{
+            width: 100%;        
+        }
+        .contact-form{
+            .btn-submit{
+                width: 100%;
+            }
+        }
+    }
 
 }

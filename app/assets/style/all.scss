@@ -1,13 +1,10 @@
 
 @import "./reset";
-@import "./variables";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@1,900&display=swap');
+@import "./base";
+@import "./variables";
 @import "./mixin";
-@import "./general-settings";
-@import "./heading";
-@import "./layout";
+@import "./common";
+@import "./header";
+@import "./footer";
 @import "./index";
-
-@import "./rwd-general-heading";
-@import "./rwd-layout";
-@import "./rwd-index";
