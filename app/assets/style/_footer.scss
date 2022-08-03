@@ -1,0 +1,128 @@
+.footer{
+    background: $primary-red;
+    padding: 48px 0 32px 0;
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+    &-menu{
+        @include listing-style(48px);
+        a{
+            @include link-text-white(16px);
+        }
+    }
+    .social-media{
+        @include listing-style(32px);
+        img{
+            max-width: 48px;
+            max-height: 48px;
+        }
+    }
+    &-contact{
+        padding-bottom: 32px;
+        border-bottom: 1px solid #ffff;
+        margin-bottom: 32px;
+        li:first-child{
+            margin-bottom: 8px;
+            img{
+                height: 36px;
+                width: auto;
+            }
+        }
+        li:last-child{
+            img{
+                height: 32px;
+                width: auto;
+            }
+        }
+        li{
+            a{
+            @include link-text-white(36px);
+            }
+            img{
+                margin-right: 22px;
+                }
+        }
+    }
+    .legal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 16px;
+            color: $primary-white;
+            line-height: 21px;
+        }
+        .legal-terms{
+            @include listing-style(48px);
+        }
+        a{
+            @include link-text-white(14px);
+        }
+    }
+    @include pad{
+        .social-media{
+            @include listing-style(16px);
+            img{
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+    }
+
+    @include mobile{
+        padding: 24px 0;
+       &-menu{
+           display: none;
+       }
+       .social-media{
+           @include listing-style(8px);
+           img{
+            max-width: 24px;
+            max-height: 24px;
+           }
+       }
+       &-main{
+           display: flex;
+           flex-direction: row-reverse;
+           justify-content: space-between;
+           align-items: start;
+           padding-bottom: 24px;
+           margin-bottom: 16px;
+           border-bottom: 1px solid #fff;
+
+       }
+       &-contact{
+           padding-bottom: 0;
+           margin-bottom: 0;
+           border: none;
+           li{
+                a{
+                    @include link-text-white(16px);
+                }
+                img{
+                    max-width: 18px;
+                    max-height: 18px;
+                    margin-right: 10px;
+                }
+           }
+       }
+       .legal{
+           flex-direction: column;
+           align-items: start;
+           &-terms{
+               flex-direction: column;
+               margin-top: 8px;
+               li:first-child{
+                   margin-bottom: 8px;
+               }
+               a{
+                   font-size: 16px;
+               }
+           }
+
+       }
+    }
+}
