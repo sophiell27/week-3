@@ -173,6 +173,158 @@ a:hover {
       max-height: 300px;
       border-top: 1px dashed #bebebe; } }
 
+.footer {
+  background: #AA0601;
+  padding: 48px 0 32px 0; }
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 24px; }
+  .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px; }
+    .footer-menu a {
+      display: block;
+      color: #fff;
+      font-size: 16px; }
+  .footer .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 32px;
+       -moz-column-gap: 32px;
+            column-gap: 32px; }
+    .footer .social-media img {
+      max-width: 48px;
+      max-height: 48px; }
+  .footer-contact {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #ffff;
+    margin-bottom: 32px; }
+    .footer-contact li:first-child {
+      margin-bottom: 8px; }
+      .footer-contact li:first-child img {
+        height: 36px;
+        width: auto; }
+    .footer-contact li:last-child img {
+      height: 32px;
+      width: auto; }
+    .footer-contact li a {
+      display: block;
+      color: #fff;
+      font-size: 36px; }
+    .footer-contact li img {
+      margin-right: 22px; }
+  .footer .legal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer .legal p {
+      font-size: 16px;
+      color: #fff;
+      line-height: 21px; }
+    .footer .legal .legal-terms {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-column-gap: 48px;
+         -moz-column-gap: 48px;
+              column-gap: 48px; }
+    .footer .legal a {
+      display: block;
+      color: #fff;
+      font-size: 14px; }
+  @media (max-width: 992px) {
+    .footer .social-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-column-gap: 16px;
+         -moz-column-gap: 16px;
+              column-gap: 16px; }
+      .footer .social-media img {
+        max-width: 40px;
+        max-height: 40px; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 24px 0; }
+      .footer-menu {
+        display: none; }
+      .footer .social-media {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-column-gap: 8px;
+           -moz-column-gap: 8px;
+                column-gap: 8px; }
+        .footer .social-media img {
+          max-width: 24px;
+          max-height: 24px; }
+      .footer-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #fff; }
+      .footer-contact {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none; }
+        .footer-contact li a {
+          display: block;
+          color: #fff;
+          font-size: 16px; }
+        .footer-contact li img {
+          max-width: 18px;
+          max-height: 18px;
+          margin-right: 10px; }
+      .footer .legal {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start; }
+        .footer .legal-terms {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-top: 8px; }
+          .footer .legal-terms li:first-child {
+            margin-bottom: 8px; }
+          .footer .legal-terms a {
+            font-size: 16px; } }
+
 .banner {
   width: auto;
   height: 787px;
