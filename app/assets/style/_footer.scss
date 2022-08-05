@@ -1,6 +1,21 @@
 .footer{
     background: $primary-red;
     padding: 48px 0 32px 0;
+    @include mobile{
+        padding: 24px 0;
+    }
+    &-main{
+        @include mobile{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: start;
+        padding-bottom: 24px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #fff;
+        }
+
+    }
     &-nav{
         display: flex;
         justify-content: space-between;
@@ -12,6 +27,9 @@
         a{
             @include link-text-white(16px);
         }
+        @include mobile{
+            display: none;
+        }
     }
     .social-media{
         @include listing-style(32px);
@@ -19,16 +37,37 @@
             max-width: 48px;
             max-height: 48px;
         }
+        @include pad{
+            @include listing-style(16px);
+            img{
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+        @include mobile{
+            @include listing-style(8px);
+            img{
+                max-width: 24px;
+                max-height: 24px;
+            }
+        }
     }
     &-contact{
         padding-bottom: 32px;
         border-bottom: 1px solid #ffff;
         margin-bottom: 32px;
-        
+        @include mobile{
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+        }
         a{
             @include link-text-white(36px);
             display: flex;
             align-items: center;
+            @include mobile{
+                @include link-text-white(16px);
+            }
         }
         span{
             max-width: 48px;
@@ -36,6 +75,11 @@
             color: #fff;
             font-weight: bold;
             margin-right: 16px;
+            @include mobile{
+                max-width: 24px;
+                max-height: 24px;
+                margin-right: 8px;
+            }
         }
         
         li:first-child{
@@ -43,12 +87,20 @@
             span{
                 font-size: 36px;
                 padding: 6px;
+                @include mobile{
+                    font-size: 18px;
+                    padding: 3px;  
+                }
             }
         }
         li:last-child{
             span{
                 font-size: 40px;
                 padding: 8px 4px;
+                @include mobile{
+                    font-size: 20px;
+                    padding: 4px 2px;
+                }
             }
         }
     }
@@ -56,6 +108,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include mobile{
+            flex-direction: column;
+           align-items: start;
+        }
         p{
             font-size: 16px;
             color: $primary-white;
@@ -63,86 +119,21 @@
         }
         .legal-terms{
             @include listing-style(48px);
+            @include mobile{
+                flex-direction: column;
+                margin-top: 8px;
+            }
+        }
+        li:first-child{
+            @include mobile{
+                margin-bottom: 8px;
+            }
         }
         a{
             @include link-text-white(14px);
-        }
-    }
-    @include pad{
-        .social-media{
-            @include listing-style(16px);
-            img{
-                max-width: 40px;
-                max-height: 40px;
+            @include mobile{
+                font-size: 16px;
             }
         }
     }
-
-    @include mobile{
-        padding: 24px 0;
-       &-menu{
-           display: none;
-       }
-       .social-media{
-           @include listing-style(8px);
-           img{
-            max-width: 24px;
-            max-height: 24px;
-           }
-       }
-       &-main{
-           display: flex;
-           flex-direction: row-reverse;
-           justify-content: space-between;
-           align-items: start;
-           padding-bottom: 24px;
-           margin-bottom: 16px;
-           border-bottom: 1px solid #fff;
-
-       }
-       &-contact{
-           padding-bottom: 0;
-           margin-bottom: 0;
-           border: none;
-           span{
-                max-width: 24px;
-                max-height: 24px;
-                margin-right: 8px;
-           }
-           li{
-                a{
-                    @include link-text-white(16px);
-                }
-           }
-           li:first-child{
-            span{
-             font-size: 18px;
-             padding: 3px;    
-             }
-            }
-            li:last-child{
-                span{
-                    font-size: 20px;
-                    padding: 4px 2px;
-                }
-            }
-        }
-       .legal{
-           flex-direction: column;
-           align-items: start;
-           &-terms{
-               flex-direction: column;
-               margin-top: 8px;
-               li:first-child{
-                   margin-bottom: 8px;
-               }
-               a{
-                   font-size: 16px;
-               }
-           }
-
-       }
-       
-    }
-    
 }

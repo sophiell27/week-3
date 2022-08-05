@@ -2,8 +2,8 @@ console.log('Hello!');
 
 $(document).ready(() => {
   // header: hamburger menu show
-  $(".ham-menu").click(function(e){
-    e.preventDefault();
+  $(".ham-menu").click(function(){
+    console.log('Hello!');
     $(".header-nav").toggleClass("show-mobile-menu");
   });
 

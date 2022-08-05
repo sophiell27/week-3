@@ -12,27 +12,15 @@
             background-size: contain;
         }
 
-        .ham-menu{
-            display: none;
-            padding: 4px;
-            font-size: 40px;
-            font-weight: bold;
-            color: $primary-white;
-            cursor: pointer;
-            &:hover{
-                opacity: 0.6;
-            }
-        }
+        
     }
     .menu{
         @include listing-style(64px);
          li a{
             @include link-text-white(20px);
          }
-     }
-     @include mobile{
-        padding: 16px 0;
-        .menu{
+         
+         @include mobile{
             display: inline-block;
             max-height: 0;
             overflow: hidden;
@@ -51,14 +39,28 @@
                     border-bottom: 1px dashed $primary-white;
                 }
             }
+            
+           
         }
-        .ham-menu{
+
+     }
+     .ham-menu{
+        display: none;
+        padding: 4px;
+        font-size: 40px;
+        font-weight: bold;
+        color: $primary-white;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.6;
+        }
+        @include mobile{
             display: block;
-        }
-       .show-mobile-menu .menu{
-            max-height: 300px;
-            border-top: 1px dashed $primary-white;
-        }
+         }
+    }
+    .show-mobile-menu .menu{
+        max-height: 300px;
+        border-top: 1px dashed $primary-white;
     }
     .dropdown-menu{
         max-width: 175px;
@@ -91,4 +93,3 @@
         }
     }
 }
-
