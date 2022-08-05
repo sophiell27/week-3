@@ -3,8 +3,8 @@
 console.log('Hello!');
 $(document).ready(function () {
   // header: hamburger menu show
-  $(".ham-menu").click(function (e) {
-    e.preventDefault();
+  $(".ham-menu").click(function () {
+    console.log('Hello!');
     $(".header-nav").toggleClass("show-mobile-menu");
   }); // index page : contact agreement checkbox show 
 
