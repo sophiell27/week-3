@@ -15,7 +15,7 @@ $(document).ready(function () {
     $(this).removeClass("agreement-checked-active");
   }); // header : menu 系列鏡框 drop down
 
-  $(".menu > li > a").click(function (e) {
+  $(".menu-more").click(function (e) {
     e.preventDefault();
     console.log('H!');
     $(this).parent().find("ul").toggleClass("show-menu");

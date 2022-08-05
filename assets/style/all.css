@@ -106,6 +106,18 @@ a:hover {
   color: #AA0601;
   text-align: center; }
 
+.page-title {
+  margin-top: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  padding-left: 16px;
+  border-left: 8px solid #AA0601;
+  margin-bottom: 32px; }
+  @media (max-width: 767px) {
+    .page-title {
+      font-size: 24px;
+      margin-top: 40px; } }
+
 .material-icons-outlined {
   font-family: 'Material Icons';
   font-weight: bold;
@@ -880,14 +892,6 @@ a:hover {
       .sunglasses-list li {
         width: 100%; } }
 
-.store-title {
-  margin-top: 96px;
-  font-size: 48px;
-  font-weight: 700;
-  padding-left: 16px;
-  border-left: 8px solid #AA0601;
-  margin-bottom: 33px; }
-
 .store-select {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -899,6 +903,9 @@ a:hover {
   .store-select label {
     font-size: 24px;
     margin-right: 16px; }
+    @media (max-width: 767px) {
+      .store-select label {
+        font-size: 16px; } }
   .store-select .locate-selector {
     width: 304px;
     border: 1px solid #CED4DA;
@@ -911,17 +918,33 @@ a:hover {
     background: url("../images/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.svg") no-repeat 100% center;
     background-size: contain;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .store-select .locate-selector {
+        font-size: 16px; } }
 
 .store-list {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-column-gap: 1.85%;
      -moz-column-gap: 1.85%;
           column-gap: 1.85%;
   row-gap: 48px; }
+  .store-list::after {
+    content: "";
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto; }
+  @media (max-width: 992px) {
+    .store-list {
+      -ms-flex-item-align: center;
+          align-self: center; } }
   @media (max-width: 767px) {
     .store-list {
       row-gap: 24px; } }
@@ -1021,5 +1044,29 @@ iframe {
   @media (max-width: 992px) {
     .sm-iframe {
       display: block; } }
+
+.faq {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (max-width: 992px) {
+    .faq {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    .faq {
+      margin-bottom: 64px; } }
+  .faq .page-sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px; }
+  .faq-list li:not(:last-child) {
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .faq-list li:not(:last-child) {
+        margin-bottom: 24px; } }
+  .faq-list h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px; }
 
 /*# sourceMappingURL=all.css.map */
