@@ -1,13 +1,5 @@
 .store{
    
-    &-title{
-     margin-top: 96px;
-    font-size: 48px;
-    font-weight: 700;
-    padding-left: 16px;
-    border-left: 8px solid $primary-red;
-    margin-bottom: 33px;
-    }
     &-select{
         display: flex;
         align-items: center;
@@ -15,6 +7,9 @@
         label{
             font-size: 24px;
             margin-right: 16px;
+            @include mobile{
+                font-size: 16px;
+            }
         }
         .locate-selector{
             width: 304px;
@@ -28,13 +23,25 @@
             background: url("../images/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.svg") no-repeat 100% center;
             background-size: contain;
             cursor: pointer;
+            @include mobile{
+                font-size: 16px;
+            }
         }
     }
     &-list{
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         column-gap: 1.85%;
         row-gap: 48px;
+        &::after {
+            content: "";
+            flex: auto;
+            }
+        @include pad{
+            align-self: center;
+        }
         @include mobile{
             row-gap: 24px;
         }
@@ -47,7 +54,6 @@
                 width: 100%;
             }
         }
-        
         .store-more{
             text-align: center;
             padding: 16px 0;
@@ -56,6 +62,7 @@
             font-size: 19px;
             color: $primary-white;
         }
+        
     }
 }
 .store-name{
