@@ -1,0 +1,16 @@
+.sunglasses-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    li{
+        width: 32.1%;
+        @include pad{
+            width: 48.2%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+
+    }
+}

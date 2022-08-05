@@ -1,0 +1,53 @@
+.store-map{
+    margin-bottom: 80px;
+    @include mobile{
+        margin-bottom: 64px;
+    }
+    &-display{
+        display: flex;
+        
+        @include pad{
+            flex-direction: column;
+            row-gap: 24px;
+        }
+        
+    }
+    &-detail{
+        max-width: 526px;
+        margin-right: 24px;
+        @include pad{
+            margin-right: 0;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 24px;
+            img,.store-map-about{
+                width: 48.4%;
+            }
+        }
+        @include mobile{
+            flex-direction: column;
+            img,.store-map-about{
+                width: 100%;
+            }
+        }
+    }
+   
+    
+
+}
+iframe{
+    max-width: 100%;
+}
+.normal-iframe{
+    @include pad{
+        display: none;
+    }
+}
+.sm-iframe{
+    max-width: 100%;
+    display: none;
+    @include pad{
+        display: block;
+    }
+}

@@ -1,0 +1,87 @@
+.store{
+   
+    &-title{
+     margin-top: 96px;
+    font-size: 48px;
+    font-weight: 700;
+    padding-left: 16px;
+    border-left: 8px solid $primary-red;
+    margin-bottom: 33px;
+    }
+    &-select{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        label{
+            font-size: 24px;
+            margin-right: 16px;
+        }
+        .locate-selector{
+            width: 304px;
+            border: 1px solid $secondary-grey5;
+            color: $color-green2;
+            padding: 6px 12px;
+            font-size: 18px;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            background: url("../images/arrow_drop_down_FILL0_wght400_GRAD0_opsz48.svg") no-repeat 100% center;
+            background-size: contain;
+            cursor: pointer;
+        }
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.85%;
+        row-gap: 48px;
+        @include mobile{
+            row-gap: 24px;
+        }
+        >li{
+            width: 32.1%;
+            @include pad{
+                width: 48.3%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        
+        .store-more{
+            text-align: center;
+            padding: 16px 0;
+            display: block;
+            background: $primary-black;
+            font-size: 19px;
+            color: $primary-white;
+        }
+    }
+}
+.store-name{
+    font-size: 24px;
+    padding: 8px 24px;
+    border: 1px solid $secondary-grey6;
+}
+.store-details{
+    border: 1px solid $secondary-grey6;
+    padding: 16px 24px;
+    li {
+        font-size: 20px;
+        display: flex;
+        span{
+            margin-top: 4px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 8px;
+            vertical-align: baseline;
+        }
+        a{
+            color: $primary-black;
+        }
+    }
+    li:not(:last-child){
+        margin-bottom: 8px;
+    }
+    
+}

@@ -28,6 +28,10 @@
             color: #fff;
             border: none;
             background: $primary-red;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.6;
+            }
         }
 
     }
@@ -57,6 +61,7 @@
     }
     &-list{
         display: flex;
+        justify-content: space-between;
         li{
             width: 23.6%;
             text-align: center;
@@ -285,10 +290,17 @@
             display: flex;
             align-items: start;
             margin-bottom: 48px;
-            img{
-                margin-right: 4px;
-                margin-top: 3px;
+            span{
+                font-size: 24px;
                 cursor: pointer;
+                color: $primary-black;
+            }
+            .agreenment-checked{
+                position: absolute;
+                display: none;
+            }
+            .agreement-checked-active{
+                display: block;
             }
             p{
                 color: $primary-black;

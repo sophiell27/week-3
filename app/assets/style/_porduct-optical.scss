@@ -1,0 +1,116 @@
+.product-nav{
+    max-width: 1296px;
+    margin: 0 auto;
+    display: flex;
+    li{
+        width: 33.3333%;
+        border: 1px solid $secondary-grey3;
+        a{
+            display: block;
+            color: $primary-black;
+            font-weight: 500;
+            font-size: 32px;
+            padding-top: 24px;
+            padding-bottom: 16px;
+            text-align: center;
+            border-bottom: 8px solid transparent;
+            
+           @include pad{
+            font-size: 24px;
+            padding: 16px 0;
+           }
+           @include mobile{
+               font-size: 16px;
+           }
+           &:hover{
+            opacity: 1;
+            border-bottom: 8px solid $primary-red;
+        }
+        }
+        .nav-active{
+            border-bottom: 8px solid $primary-red;
+        }
+    
+        
+        
+    }
+}
+.product-banner{
+    display: flex;
+    img{
+        width: 50%;
+        @include pad{
+            &:nth-child(-n+2){
+                display: none;
+            }
+        }
+        &:nth-last-child(-n+2){
+            display: none;
+            @include pad{
+                display: block;
+            }
+        }
+        
+        
+    }
+       
+}
+.product{
+    &-title{
+        font-size: 42px;
+        font-weight: 500;
+        text-align: center;
+    }
+    &-subtitle{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 80px;
+        @include pad{
+            row-gap: 40px;
+        }
+        li{
+            width: 23.6%;
+            @include pad{
+                width: 48.3%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+            img{
+                @include mobile{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-detail{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        span{
+            color: $primary-red;
+            font-weight: 500;
+        }
+    }
+    &-color-showcase{
+        display: flex;
+        column-gap: 8px;
+    }
+    &-color{
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        &:first-child{
+            background: $product-color;
+        }
+        &:last-child{
+            background: $product-color2;
+        }
+    }
+}

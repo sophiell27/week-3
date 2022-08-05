@@ -12,12 +12,15 @@
             background-size: contain;
         }
 
-        .mobile-nav{
+        .ham-menu{
             display: none;
-            padding: 10px 5px;
-           img{
-               width: 30px;
-               height: 20px;
+            padding: 4px;
+            font-size: 40px;
+            font-weight: bold;
+            color: $primary-white;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.6;
             }
         }
     }
@@ -28,11 +31,9 @@
          }
      }
      @include mobile{
-        .header-nav{
-            padding: 0 15px;
-            
-        }
+        padding: 16px 0;
         .menu{
+            display: inline-block;
             max-height: 0;
             overflow: hidden;
             flex-direction: column;
@@ -47,16 +48,46 @@
                 display: block;
                 padding: 10px 25px;
                 &:hover{
-                    border-bottom: 1px dashed #bebebe;
+                    border-bottom: 1px dashed $primary-white;
                 }
             }
         }
-        .mobile-nav{
+        .ham-menu{
             display: block;
         }
        .show-mobile-menu .menu{
             max-height: 300px;
-            border-top: 1px dashed #bebebe;
+            border-top: 1px dashed $primary-white;
+        }
+    }
+    .dropdown-menu{
+        max-width: 175px;
+        overflow: hidden;
+        position: absolute;
+        top: 130px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background: $primary-red;
+        border-top: 1px dashed $primary-white;
+        display: none;
+        a{
+            display: block;
+            padding: 10px 25px;
+            &:hover{
+                border-bottom: 1px dashed $primary-white;
+            }
+           
+        }
+        @include mobile{
+            position:static;
+            transform: translate(0, 0);
+        }
+    }
+    .show-menu{
+        display: inline-block;
+        @include mobile{
+            opacity: 0.7;
+            border-top: none;
         }
     }
 }

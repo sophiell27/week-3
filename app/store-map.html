@@ -1,0 +1,31 @@
+---
+title: Store Map
+layout: ./app/layout.ejs
+engine: ejs
+current: store-map
+---
+<main class="store-map container">
+    <h1 class="store-title">門市據點</h1>
+    <form class="store-select">
+        <label for="store-map-locate">選擇分店</label>
+        <select name="store-map-locate" id="store-map-locate" class="locate-selector store-map-locate">
+            <option value="台北中山旗艦店">台北中山旗艦店</option>
+        </select>
+    </form> 
+    <section class="store-map-display">
+        <div class="store-map-detail">
+                <img src="./assets/images/storepage-1.png" alt="store pic">
+            
+            <div class="store-map-about">
+                <h2 class="store-name">台北中山旗艦店</h2>
+                <ul class="store-details">
+                <li><span class="material-symbols-outlined">call</span>電話： <a href="tel:+(02)000-1234">(02)000-1234</a> </li>
+                <li><span class="material-symbols-outlined">schedule</span>營業時間：10:00-21:00</li>
+                <li><span class="material-symbols-outlined">location_on</span>地址：台北市中山區南京東路25巷2-1號</li>
+               
+            </div>
+        </div>
+        <iframe class="normal-iframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637552808645!2d121.53568141511543!3d25.052266183963784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2shk!4v1659680484509!5m2!1szh-TW!2shk" width="1296px" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="sm-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4637552808645!2d121.53568141511543!3d25.052266183963784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdf92494d29%3A0xd908a8a881f73476!2zMTA0OTHlj7DngaPlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuInmrrUyNeiZnw!5e0!3m2!1szh-TW!2shk!4v1659680484509!5m2!1szh-TW!2shk" width="auto" height="414px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</main>
